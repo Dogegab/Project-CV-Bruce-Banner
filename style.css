@@ -221,7 +221,7 @@ nav {
 }
 
 @media only screen and (max-width: 992px) {
-    h1 {
+    .container-hero-txt h1 {
     display: flex;
     justify-content: space-between;
 
@@ -241,7 +241,7 @@ nav {
     justify-content: flex-start;
 }
 
-h2 {
+.parcoursPro h2 {
     border-bottom: .2rem solid var(--tertiary-color); /* Couleur et épaisseur du trait */
     padding-bottom: 2rem; /* Marge inférieure pour séparer le titre du trait */
     font-family: "unbounded", sans-serif;
@@ -252,7 +252,19 @@ h2 {
     margin:3.4rem;
 }
 
+/* fin travail sur la page index.html */
 
+/* debut travail sur la page competences.html */
+
+/* fin travail page competences.html */
+
+/* debut travail sur la page contact.html */
+
+/*fin de travail sur la page contact.html * /
+
+/* debut travail footer */
+
+/* fin travail footer */
 
 
 
