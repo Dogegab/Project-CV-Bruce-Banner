@@ -1,0 +1,258 @@
+
+/* debut reset */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit; /* Utilise la couleur héritée du parent */
+    text-decoration: none; /* Enlève le soulignement */
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 1.6rem;
+  }
+  
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+    /*fin reset*/
+
+    /*déclaration de variable */
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #FFFFFF;
+    --tertiary-color: #46FF43;
+    --quaternary-color: #5D5D5D;
+    --first-font: 'Unbounded', sans-serif;
+    --second-font: 'Figtree', sans-serif;
+
+}
+    /* fin des variables */
+
+.sr-only {
+    clip: rect(1px, 1px, 1px, 1px);
+    height:1px;
+    overflow:hidden;
+    width:1px;
+    position:absolute;
+    white-space: nowrap;
+
+}
+
+body {
+    overflow-x:hidden;
+    margin:0;
+    font-family: var(--second-font);
+}
+
+header {
+    display:flex;
+    width: 100vw;
+    justify-content: end;
+    flex-wrap: wrap;
+
+}
+
+
+/* travail sur la Nav */
+
+nav {
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline:1rem;
+    
+}
+
+#primary-nav_list {
+    display:flex;
+    transform: translateX(100000%);
+
+}
+
+#primary-nav_list[data-visible="true"] {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(0%);
+    list-style: none;
+    height: 17rem;
+    background-color: var(--primary-color);
+    border-radius: 0 0 2rem 2rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    justify-content: center;
+    padding-inline-start: 4rem;
+    gap: 1rem;
+}
+
+.nav_link {
+    color: var(--secondary-color);
+}
+
+.mobile-nav-toggle {
+    display:block;
+    position: relative;
+    width: 2.5rem;
+    aspect-ratio: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.navContainer {
+    width: 100%;
+    background-color: var(--primary-color);
+    z-index: 1000;
+    margin-inline:1rem;
+    margin-block-start: 1.5rem;
+    border-radius: 2rem 2rem 2rem;
+    height:3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logoNav {
+    width:2.5rem;
+    height:2rem;
+    margin-inline: 1rem;
+}
+
+.menu-icon {
+    display:block;
+    position:absolute;
+    width: 2.5rem;
+    height: .1rem;
+    background-color: white;
+    transition: transform .6s;
+    left:-0.3rem;
+}
+
+.menu-icon:before {
+    position: absolute;
+    content: "";
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    bottom:-.5rem;
+    left:0rem;
+}
+
+.menu-icon:after {
+    position: absolute;
+    content: "";
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    top:-.5rem;
+    left:0rem;
+}
+
+.mobile-nav-toggle[aria-expanded="true"] > .menu-icon {
+    transform:rotate(45deg);
+}
+
+.mobile-nav-toggle[aria-expanded="true"] > .menu-icon:before {
+    display: none;
+}
+
+.mobile-nav-toggle[aria-expanded="true"] > .menu-icon:after {
+    transform:rotate(-90deg);
+    top: 0;
+}
+
+/* fin du travail de Nav */
+
+/* debut travail Accueil(index.html) */
+
+.hero {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1fr;
+}
+
+.container-hero-txt {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    width: 90%;
+    font-size: 1rem;
+    font-family: var(--first-font);
+    align-self: center;
+}
+
+.container-hero-img {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    width:27rem;
+    position: relative;
+}
+
+.container-hero-img::after {
+    content: "";
+    position: absolute;
+    background-color: var(--tertiary-color);
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    top: 50%;
+    left: calc(100% - 23rem);
+    z-index: -1;
+}
+
+@media only screen and (max-width: 992px) {
+    h1 {
+    display: flex;
+    justify-content: space-between;
+
+}}
+
+.parcoursPro {
+    padding: 2rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: .8rem;
+    height: 58.5rem;
+    margin-inline: 0.8rem;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h2 {
+    border-bottom: .2rem solid var(--tertiary-color); /* Couleur et épaisseur du trait */
+    padding-bottom: 2rem; /* Marge inférieure pour séparer le titre du trait */
+    font-family: "unbounded", sans-serif;
+    padding-bottom:2rem;
+}
+
+.parcoursPro ul li {
+    margin:3.4rem;
+}
+
+
+
+
+
