@@ -383,7 +383,7 @@ li:not(:last-child)::before {
     width: 3rem;
 }
 .pagecontact main form {
-    color:#3ff706;;
+    color:var(--tertiary-color);
     font-family:var(--first-font);
     font-optical-sizing: auto;
     font-weight:weight;
@@ -394,6 +394,11 @@ li:not(:last-child)::before {
     flex-direction:column;
     border-radius: 3rem; 
     width: 3rem;
+}
+.mecontacter {
+    text-align: center;
+    font-family:var(--first-font);
+    background-color:var(--primary-color) ;
 }
 
 /*fin de travail sur la page contact.html * /
