@@ -252,6 +252,7 @@ nav {
     margin:3.4rem;
 }
 
+
 /* fin travail sur la page index.html */
 
 /* debut travail sur la page competences.html */
@@ -259,6 +260,27 @@ nav {
 /* fin travail page competences.html */
 
 /* debut travail sur la page contact.html */
+.pagecontact main h1 {
+    color:var(--primary-color) ;
+    background-color:var(--tertiary-color);
+    margin: 1rem;
+    padding:1rem ;
+    border-radius: 3rem;
+    width: 3rem;
+}
+.pagecontact main form {
+    color:#3ff706;;
+    font-family:var(--first-font);
+    font-optical-sizing: auto;
+    font-weight:weight;
+    font-style:normal;
+    align-items:center;
+    background-color:#030303;
+    display: flex;
+    flex-direction:column;
+    border-radius: 3rem; 
+    width: 3rem;
+}
 
 /*fin de travail sur la page contact.html * /
 
