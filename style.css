@@ -337,10 +337,10 @@ li:not(:last-child)::before {
     color:var(--secondary-color);
     padding-inline:2rem;
     border-radius:2rem;
-    display:flex;
     flex-direction: column;
     justify-content: center;
-    height:auto;
+    
+
 }
 
 .myProject h3 {
@@ -374,32 +374,37 @@ li:not(:last-child)::before {
 /* fin travail page competences.html */
 
 /* debut travail sur la page contact.html */
-.pagecontact main h1 {
+.pagecontact h1 {
     color:var(--primary-color) ;
     background-color:var(--tertiary-color);
-    margin: 1rem;
-    padding:1rem ;
-    border-radius: 3rem;
-    width: 3rem;
+    margin:2rem;
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
 }
-.pagecontact main form {
+.pagecontact form {
     color:var(--tertiary-color);
     font-family:var(--first-font);
     font-optical-sizing: auto;
     font-weight:weight;
     font-style:normal;
-    align-items:center;
     background-color:#030303;
     display: flex;
-    flex-direction:column;
+    flex-direction: column; 
     border-radius: 3rem; 
-    width: 3rem;
-}
-.mecontacter {
+    width: 24rem;
+   margin:2REM ;
+   text-align: center;
+   }
+   .pagecontact h2 {
+    color:var(--primary-color) ;
+    background-color:var(--tertiary-color);
+    margin:2rem;
+    padding: 1rem;
+    border-radius: 15px;
     text-align: center;
-    font-family:var(--first-font);
-    background-color:var(--primary-color) ;
 }
+
 
 /*fin de travail sur la page contact.html * /
 
