@@ -57,6 +57,9 @@ body {
     overflow-x:hidden;
     margin:0;
     font-family: var(--second-font);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 header {
@@ -64,7 +67,6 @@ header {
     width: 100vw;
     justify-content: end;
     flex-wrap: wrap;
-
 }
 
 
@@ -521,7 +523,7 @@ li:not(:last-child)::before {
     .parcoursPro ul li::after {
         content: '';
         position: absolute;
-        bottom: calc(100% + 2.8rem);
+        bottom: calc(100% + 3.3rem);
         left: 1rem;
         width: 40rem;
         height: 1px; 
@@ -662,7 +664,6 @@ li:not(:last-child)::before {
 /* debut travail sur la page competences.html */
 
 .slider-container {
-    max-width: 800px;
     position: relative;
     margin: 30px auto;
     height: 50vh;
@@ -676,6 +677,7 @@ li:not(:last-child)::before {
     bottom: 0;
     text-align: center;
   }
+
   .menu label {
     cursor:pointer;
     display: inline-block;
@@ -683,7 +685,7 @@ li:not(:last-child)::before {
     height: 10px;
     background: #0e0e0e;
     border-radius: 50px;
-    margin: 0 0.2em 1em;
+    margin: 0rem 0.2em 1em;
   }
   .menu label:hover,.menu label:focus {
     background: #46ff43;
@@ -691,17 +693,21 @@ li:not(:last-child)::before {
   .slide-input{
     opacity: 0;
   }
+
   .slide-img {
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 90%;
     position: absolute;
-    top: 0;
-    left: 100%;
+    top: 50%;
+    left: 50%;
     z-index: 10;
     transition: left 0s 0.75s;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    border-radius: 24px 24px 29px 29px;
   }
   [id^="slide"]:checked + .slide-img {
-    left: 0;
+    left: 50%;
     z-index: 100;
     transition: left 0.65s ease-out;
   }
@@ -710,31 +716,47 @@ li:not(:last-child)::before {
     text-align: center;
     font-size: 3rem;
     font-family: var(--first-font);
+    margin-top: 10px;
   
 }
 
 .competences p {
     margin-top: 50px;
     font-family:var(--second-font);
-    margin-bottom: 3 rem;
+    margin-bottom: 3rem;
     max-width: 65ch;
 }
 
 .competences p:first-child {
-    margin: 0 1rem; 
+    margin: 0 0.5rem; 
 }
 .competences {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 5px 5px 5px 5px var(--primary-color);
-    width:90%;
+    /* côté droit, côté gauche, côté bas, côté haut */
+    box-shadow: 5px 0px 10px var(--tertiary-color),-10px 0 10px  var(--quaternary-color), 0px 5px 5px  var(--primary-color), 0px -5px 5px var(--primary-color);
     margin-inline: 5rem; 
     padding-inline: 5.5rem;
+    margin-top: 10rem;
+    border-radius: 24px 24px 29px 29px;
 }
 
 
-
+@media only screen and (max-width:720px)  {
+    
+    .slide-img {
+     width: 95%;
+     height: 80%;
+    }
+ 
+    .slider-container {
+     width: 100%;
+    }
+    .competences{
+     margin-bottom: 2rem;
+    }
+ }
 
 
 
@@ -837,6 +859,7 @@ footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 2rem 2rem 0 0;
+    margin-top: auto;
 }
 
 footer ul li {
