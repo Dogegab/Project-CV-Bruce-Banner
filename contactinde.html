@@ -1,89 +1,125 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="nav.js" defer></script>
     <title>Desktop-contact</title>
-</head>
-<body>
-        <header>
-            <div class="navContainer">                    
-                <img src="img/logoBB.png" class="logoNav" alt="Logo Bruce Banner">
-                <nav aria-label="primary navigation" class="nav">
-                    <ul data-visible="false" id="primary-nav_list" class="sr-only">
-                        <li><a href="#" class="nav_link">Accueil</a></li>
-                        <li><a href="#" class="nav_link">Compétences</a></li>
-                        <li><a href="#" class="nav_link">Contact</a></li>
-                    </ul>
-                    <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="primary-nav_list">
-                        <span class="sr-only">Menu</span>
-                        <span class="menu-icon"></span>
-                    </button>
-                </nav>
+  </head>
+  <body>
+    <header>
+      <div class="navContainer">
+        <img src="img/logoBB.png" class="logoNav" alt="Logo Bruce Banner" />
+        <nav aria-label="primary navigation" class="nav">
+          <ul data-visible="false" id="primary-nav_list" class="sr-only">
+            <li><a href="/" class="nav_link">Accueil</a></li>
+            <li>
+              <a href="/competences.html" class="nav_link">Compétences</a>
+            </li>
+            <li><a href="/contactinde.html" class="nav_link">Contact</a></li>
+          </ul>
+          <button
+            class="mobile-nav-toggle"
+            aria-expanded="false"
+            aria-controls="primary-nav_list"
+          >
+            <span class="sr-only">Menu</span>
+            <span class="menu-icon"></span>
+          </button>
+        </nav>
+      </div>
+      <div class="navContainer2">
+        <img src="img/logoBB.png" class="logoNav2" alt="Logo Bruce Banner" />
+        <nav aria-label="primary navigation" class="nav">
+          <ul id="primary-nav_list">
+            <li><a href="/" class="nav_link2">Accueil</a></li>
+            <li>
+              <a href="/competences.html" class="nav_link2">Compétences</a>
+            </li>
+            <li><a href="/contactinde.html" class="nav_link2">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="pagecontact">
+      <div class="container">
+        <div class="imgportraitcontact">
+          <img
+            src="img\ddtrwgm-507ded2b-91da-437d-97c3-7553757d05c7.png"
+            alt="image"
+          />
+        </div>
+        <div class="enseigne">
+          <img src="img\logoBB.png" alt="Logo Bruce Banner" />
+        </div>
+      </div>
+      <h2 class="titre2-contact">Me contacter</h2>
+      <form>
+        <div class="form-container">
+          <div class="group-form">
+            <div class="form-group">
+              <label>Votre prénom :</label>
+              <input type="text" />
             </div>
-            <div class="navContainer2">                    
-                <img src="img/logoBB.png" class="logoNav2" alt="Logo Bruce Banner">
-                <nav aria-label="primary navigation" class="nav">
-                    <ul id="primary-nav_list">
-                        <li><a href="#" class="nav_link2">Accueil</a></li>
-                        <li><a href="#" class="nav_link2">Compétences</a></li>
-                        <li><a href="#" class="nav_link2">Contact</a></li>
-                    </ul>
-                </nav>
+            <div class="form-group">
+              <label>Votre nom : </label>
+              <input type="text" />
             </div>
-        </header>
-        <main class="pagecontact">
-            <h1>les infos de base</h1>
-            <div class="container">
-            <div class="imgportraitcontact">
-             <img  src="img\ddtrwgm-507ded2b-91da-437d-97c3-7553757d05c7.png" alt="image"/>
+          </div>
+        </div>
+        <div class="form-container">
+          <div class="group-form">
+            <div class="form-group">
+              <label>Votre email :</label>
+              <input type="email" required />
             </div>
-            <div class="enseigne">
-             <img src="img\logoBB.png" alt="Logo Bruce Banner">
+            <div class="form-group form-date">
+              <label> Votre date naissance :</label>
+              <input type="date" />
             </div>
-            </div>
-            <h2>Me contacter</h2>
-            <form>
-                <div class="prenom">Quel est votre prénom: </label>
-                <input type="text" /></div>
-                <div class="nom">Quel est votre nom: </label>
-                <input type="text" />
-                <div class="mail">Quel est votre email:</label>
-                <input type="email" required/></div>
-                <label>Quel est votre date de naissance: </label>
-                <input type="date"></div>
-                <div class="contactreason" for="contact-reason">Quel est la raison de votre contact ?</label></div>
-               <div><select name="reason" id="contact-reason">
-                    <option value="">--Choisissez une option--</option>
-                    <option value="informations">Je souhaite plus d'informations sur vos prestations</option>
-                    <option value="bug">Reporter un bug sur le site web</option>
-                    <option value="discute">J'aimerais discuter</option>
-                </select>
-                </div>
-                <br>
-                <br>
-                <label>Ecrivez votre message:</label>
-                <br>
-                <div><textarea id="message" name="message" placeholder="Tapez votre message ici" rows="5" cols="15" maxlength="500" wrap></textarea></div>
-                <input type="submit" class="formulaire" value="Envoyer le formulaire">
-                <label>S'inscrire à la newsletter </label> 
-                <input type="checkbox" value="newsletter">
-                
-            </form>
-        </main>
-        <footer>
-            <div class="footercontainer">
-                <ul> 
-                    <h3>Find me</h3>
-                    <li>9878/25 sec 9 rohini 35</li>
-                    <li>+91-9999878398</li>
-                    <li>info@example.com</li>
-                </ul>
-                <p>Wild Code School 2024 ©</p>
-            </div>
-        </footer>
-</body>  
+          </div>
+        </div>
+        <div class="form-group form-info">
+          <label>Quel est la raison de votre contact ?</label>
+          <select name="reason" id="contact-reason">
+            <option value="">--Choisissez une option--</option>
+            <option value="informations">
+              Je souhaite plus d'informations sur vos prestations
+            </option>
+            <option value="bug">Reporter un bug sur le site web</option>
+            <option value="discute">J'aimerais discuter</option>
+          </select>
+        </div>
+        <div class="form-group form-description">
+          <label>Ecrivez votre message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Tapez votre message ici"
+            rows="5"
+            cols="15"
+            maxlength="500"
+            wrap
+          ></textarea>
+        </div>
+        <div class="form-group form-checkpoint">
+          <label>S'inscrire à la newsletter </label>
+          <input type="checkbox" value="newsletter" />
+        </div>
+        <button type="submit" class="formulaire">Envoyer le formulaire</button>
+      </form>
+    </main>
+    <footer>
+      <div class="footercontainer">
+        <ul>
+          <h3>Find me</h3>
+          <li>9878/25 sec 9 rohini 35</li>
+          <li>+91-9999878398</li>
+          <li>info@example.com</li>
+        </ul>
+        <p>Wild Code School 2024 ©</p>
+      </div>
+    </footer>
+  </body>
 </html>
-     

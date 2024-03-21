@@ -651,11 +651,13 @@ li:not(:last-child)::before {
 }
 
 @media only screen and (min-width:720px) {
+
 .myProject a {
     margin-left:18rem;
     margin-bottom:2rem;
 }
 }
+
 
 /* fin travail sur la page index.html */
 
@@ -664,9 +666,18 @@ li:not(:last-child)::before {
 /* fin travail page competences.html */
 
 /* debut travail sur la page contact.html */
-select{
-   width:177px ; 
+input{
+  border-radius:15px;  
 }
+
+input,textarea,select{
+    margin-top:1rem ;
+    width: 80%;
+}
+.label{
+    margin-top: 1rem;
+}
+
 .container{
     display: grid;
     grid-template-columns:1fr 1fr ;
@@ -679,14 +690,10 @@ select{
 .enseigne img{
     width:15rem ;
     border-radius: 30%;
-    }
-.pagecontact h1 {
-    color:var(--primary-color) ;
-    background-color:var(--tertiary-color);
-    margin:2rem;
-    padding: 1rem;
-    border-radius: 15px;
-    text-align: center;
+}
+
+.form-info select {
+    border-radius: 20px;
 }
 
 .pagecontact form {
@@ -697,26 +704,34 @@ select{
     font-style:normal;
     background-color:#000000;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    align-items: center; 
     border-radius: 4rem; 
-    width: 70%;
-    margin: 5rem;
+    width: 90%;
+    margin-top: 3rem;
     text-align: center;
    }
+ 
+   .pagecontact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   
    .pagecontact h2 {
     color:var(--primary-color) ;
     background-color:var(--tertiary-color);
     margin:2rem;
-    padding: 1rem;
+    padding: 1rem 6rem;
     border-radius: 15px;
     text-align: center;
     margin-top: 10rem;
+    font-size: 2rem;
 }
 
 textarea {
     resize: none;
     width: 177px;
-
 }
 
 .formulaire{
@@ -725,10 +740,14 @@ textarea {
     background-color: var(--tertiary-color);
     margin-top: 0.5em; 
     margin-bottom:0.5rem;
+    padding:1rem 1.5rem ;
+    width:60% ;
+    cursor: pointer;
 }
-
-     
-
+.formulaire:hover{
+    background-color:var(--secondary-color) ;
+    color:var(--primary-color);
+}
 
  .imgportraitcontact{
     display: grid;
@@ -736,6 +755,27 @@ textarea {
     grid-column: 1 / 2;
     width:15rem;
     position: relative;
+}
+
+.form-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.form-group {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 .imgportraitcontact::after {
@@ -748,6 +788,101 @@ textarea {
     top: 80%;
     left: calc(100% - 13rem);
     z-index: -1;
+}
+
+.form-info select {
+    width: 70%;
+}
+
+@media screen and (min-width: 720px) {
+    .pagecontact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pagecontact h2 {
+        padding: 1.5rem 20rem;
+        font-size: 2rem;
+        border-radius: 40px;
+    }
+
+    .enseigne img{
+        width:25rem ;
+        height: 22rem;
+        }
+
+    .imgportraitcontact{
+        width:25rem;
+        margin-right: 25rem;
+        margin-top: 2rem
+    }  
+    .imgportraitcontact::after {
+        width: 18rem;
+        height: 12rem;
+        border-radius: 30%;
+        top: 80%;
+        left: calc(100% - 22rem);
+    }
+    form {
+        width: 70%;
+        padding: 2rem;
+        border: solid var(--tertiary-color)
+    }
+
+    .form-group {
+        margin-top: 1.5rem;
+        margin-left: 2rem;
+    }
+
+    input, select, textarea {
+        padding: 0.5rem;
+        border: 1px solid;
+    }
+    input  {
+        width: 100%;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        border: none; 
+    }    
+    .group-form {
+        display: flex;
+    }
+
+    .form-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .form-info  select {
+        width: 40%;
+    }
+
+    .form-description {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    textarea {
+        width: 40%;
+    }
+
+    .form-checkpoint {
+        display: flex;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        align-items: center;
+    }
+
+    input[type="checkbox"] {
+        width: 5rem;
+        margin: 0;
+    }
 }
 
 
