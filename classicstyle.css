@@ -1,0 +1,32 @@
+.pagecontact h1 {
+  color: var();
+}
+.pagecontact form {
+   
+   }
+   .pagecontact h2 {
+   
+}
+
+
+/*fin de travail sur la page contact.html * /
+
+/* debut travail footer */
+
+footer {
+    margin-top:3rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+footer ul li {
+    list-style: none;
+}
+
+.footercontainer {
+    margin-inline:1rem;
+    padding-block:1rem;
+    display:flex;
+    justify-content: center;
+}
+

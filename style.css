@@ -374,6 +374,22 @@ li:not(:last-child)::before {
 /* fin travail page competences.html */
 
 /* debut travail sur la page contact.html */
+select{
+   width:177px ; 
+}
+.container{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+}
+.enseigne{
+    align-self:center ;
+    justify-self:center;
+    margin-right:0.5rem ;
+}
+.enseigne img{
+    width:15rem ;
+    border-radius: 30%;
+    }
 .pagecontact h1 {
     color:var(--primary-color) ;
     background-color:var(--tertiary-color);
@@ -382,19 +398,20 @@ li:not(:last-child)::before {
     border-radius: 15px;
     text-align: center;
 }
+
 .pagecontact form {
     color:var(--tertiary-color);
     font-family:var(--first-font);
-    font-optical-sizing: auto;
+    font-optical-sizing:auto;
     font-weight:weight;
     font-style:normal;
-    background-color:#030303;
+    background-color:#000000;
     display: flex;
     flex-direction: column; 
-    border-radius: 3rem; 
-    width: 24rem;
-   margin:2REM ;
-   text-align: center;
+    border-radius: 4rem; 
+    width: 70%;
+    margin: 5rem;
+    text-align: center;
    }
    .pagecontact h2 {
     color:var(--primary-color) ;
@@ -403,6 +420,47 @@ li:not(:last-child)::before {
     padding: 1rem;
     border-radius: 15px;
     text-align: center;
+    margin-top: 10rem;
+}
+
+textarea {
+    resize: none;
+    width: 177px;
+
+}
+
+.formulaire{
+    border-radius: 15px;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    margin-top: 0.5em; 
+    margin-bottom:0.5rem;
+}
+
+@media screen and (min-width: 900px) {
+    .formulaire {
+        
+    }
+}
+
+ .imgportraitcontact{
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    width:15rem;
+    position: relative;
+}
+
+.imgportraitcontact::after {
+    content: "";
+    position: absolute;
+    background-color: var(--tertiary-color);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 30%;
+    top: 80%;
+    left: calc(100% - 13rem);
+    z-index: -1;
 }
 
 

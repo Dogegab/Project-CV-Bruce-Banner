@@ -26,37 +26,41 @@
         <hr>
         <main class="pagecontact">
             <h1>les infos de base</h1>
-            <img class="imgportraitcontact" src="img\ddtrwgm-507ded2b-91da-437d-97c3-7553757d05c7.png" alt="image"/>
-           
+            <div class="container">
+            <div class="imgportraitcontact">
+             <img  src="img\ddtrwgm-507ded2b-91da-437d-97c3-7553757d05c7.png" alt="image"/>
+            </div>
+            <div class="enseigne">
+             <img src="img\logoBB.png" alt="Logo Bruce Banner">
+            </div>
+            </div>
             <h2>Me contacter</h2>
             <form>
-                <label>Quel est votre prénom: <input type="text" /></label>
-                <br>
-                <label>Quel est votre nom: <input type="text" /></label>
-                <br>
-                <label>Quel est votre email: <input type="email" required></label>
-                <br>
-                <label>Quel est votre date de naissance: <input type="date"></label>
-                <br>
-                <label for="contact-reason">Quel est la raison de votre contact ?</label>
-    
-                <select name="reason" id="contact-reason">
+                <div class="prenom">Quel est votre prénom: </label>
+                <input type="text" /></div>
+                <div class="nom">Quel est votre nom: </label>
+                <input type="text" />
+                <div class="mail">Quel est votre email:</label>
+                <input type="email" required/></div>
+                <label>Quel est votre date de naissance: </label>
+                <input type="date"></div>
+                <div class="contactreason" for="contact-reason">Quel est la raison de votre contact ?</label></div>
+               <div><select name="reason" id="contact-reason">
                     <option value="">--Choisissez une option--</option>
                     <option value="informations">Je souhaite plus d'informations sur vos prestations</option>
                     <option value="bug">Reporter un bug sur le site web</option>
                     <option value="discute">J'aimerais discuter</option>
                 </select>
+                </div>
                 <br>
-                <label>S'inscrire à la newsletter <input type="checkbox" value="newsletter"></label>
                 <br>
-                <label>Ecrivez votre message:
-                    <br>
-                    <textarea id="message" name="message" rows="5" cols="33" maxlength="500" wrap>
-    Tapez votre message ici
-                    </textarea>
-                </label>
+                <label>Ecrivez votre message:</label>
                 <br>
-                <input type="submit" value="Envoyer le formulaire">
+                <div><textarea id="message" name="message" placeholder="Tapez votre message ici" rows="5" cols="15" maxlength="500" wrap></textarea></div>
+                <input type="submit" class="formulaire" value="Envoyer le formulaire">
+                <label>S'inscrire à la newsletter </label> 
+                <input type="checkbox" value="newsletter">
+                
             </form>
         </main>
         <hr>
@@ -64,13 +68,7 @@
            
             <p>Contact : <a href="mailto:bob.smith@gmail.com">bob.smith@gmail.com</a></p>
             <p>@Copyright 2022</p>
-<header>
-  
-</header>
-
-<MAIN>
-  
-</MAIN>
+        </footer>
 </body>  
 </html>
      
