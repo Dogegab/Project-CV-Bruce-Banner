@@ -285,6 +285,7 @@ li:not(:last-child)::before {
     position: relative;
     margin-inline:auto;
     margin-block:3rem;
+    box-shadow: 1px 20px 5px 2px var(--secondary-color);
 }
 
 .myProject img {
@@ -297,11 +298,11 @@ li:not(:last-child)::before {
     content: "";
     position: absolute;
     background-color: var(--tertiary-color);
-    width: 25rem;
+    width: 26rem;
     height: 15rem;
     border-radius: 15%;
-    top:4.1rem;
-    left: calc(100% - 26.4rem);
+    top:5.2rem;
+    left: calc(100% - 27rem);
     z-index: -1;
 }
 
@@ -521,7 +522,7 @@ li:not(:last-child)::before {
     .parcoursPro ul li::after {
         content: '';
         position: absolute;
-        bottom: calc(100% + 2.8rem);
+        bottom: calc(100% + 3.3rem);
         left: 1rem;
         width: 40rem;
         height: 1px; 
@@ -574,6 +575,7 @@ li:not(:last-child)::before {
     display: flex;
     justify-items: center;
     grid-template-rows: 2fr;
+    box-shadow: 1px 20px 5px 2px var(--secondary-color);
 }
 }
 
@@ -582,11 +584,11 @@ li:not(:last-child)::before {
     content: "";
     position: absolute;
     background-color: var(--tertiary-color);
-    width: 25rem;
+    width: 26rem;
     height: 15rem;
     border-radius: 15%;
-    top:4.1rem;
-    left: calc(100% - 26.4rem);
+    top:5rem;
+    left: calc(100% - 27rem);
     z-index: -1;
 }
 }
