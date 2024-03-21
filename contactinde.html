@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="nav.js" defer></script>
     <title>Desktop-contact</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
             <div class="navContainer">                    
                 <img src="img/logoBB.png" class="logoNav" alt="Logo Bruce Banner">
                 <nav aria-label="primary navigation" class="nav">
-                    <ul data-visible="false" id="primary-nav_list" >
+                    <ul data-visible="false" id="primary-nav_list" class="sr-only">
                         <li><a href="#" class="nav_link">Accueil</a></li>
                         <li><a href="#" class="nav_link">Compétences</a></li>
                         <li><a href="#" class="nav_link">Contact</a></li>
@@ -23,7 +24,6 @@
                 </nav>
             </div>
         </header>
-        <hr>
         <main class="pagecontact">
             <h1>les infos de base</h1>
             <div class="container">
@@ -63,11 +63,16 @@
                 
             </form>
         </main>
-        <hr>
         <footer>
-           
-            <p>Contact : <a href="mailto:bob.smith@gmail.com">bob.smith@gmail.com</a></p>
-            <p>@Copyright 2022</p>
+            <div class="footercontainer">
+                <ul> 
+                    <h3>Find me</h3>
+                    <li>9878/25 sec 9 rohini 35</li>
+                    <li>+91-9999878398</li>
+                    <li>info@example.com</li>
+                </ul>
+                <p>Wild Code School 2024 ©</p>
+            </div>
         </footer>
 </body>  
 </html>
