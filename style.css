@@ -559,6 +559,7 @@ li:not(:last-child)::before {
         margin-top: 5rem;
         margin-left: 5rem;
         margin-right: 3.5rem;
+        margin-bottom:3rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -673,7 +674,6 @@ li:not(:last-child)::before {
         margin-bottom: 2rem;
     }
 }
-
 
 /* fin travail sur la page index.html */
 
@@ -846,6 +846,7 @@ select {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom:3rem;
 
 }
 
@@ -866,6 +867,7 @@ select {
 textarea {
     resize: none;
     width: 177px;
+
 }
 
 .formulaire {
@@ -1041,7 +1043,7 @@ textarea {
 /* debut travail footer */
 
 footer {
-    margin-top: 3rem;
+   
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 2rem 2rem 0 0;
