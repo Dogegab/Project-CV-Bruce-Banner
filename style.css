@@ -681,19 +681,23 @@ input,textarea,select{
 .container{
     display: grid;
     grid-template-columns:1fr 1fr ;
+   
 }
 .enseigne{
     align-self:center ;
     justify-self:center;
     margin-right:0.5rem ;
+
 }
 .enseigne img{
     width:15rem ;
     border-radius: 30%;
+   
 }
 
 .form-info select {
     border-radius: 20px;
+  
 }
 
 .pagecontact form {
@@ -710,12 +714,14 @@ input,textarea,select{
     width: 90%;
     margin-top: 3rem;
     text-align: center;
+    border:var(--tertiary-color) solid 5px 
    }
  
    .pagecontact {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
    }
    
    .pagecontact h2 {
@@ -727,13 +733,15 @@ input,textarea,select{
     text-align: center;
     margin-top: 10rem;
     font-size: 2rem;
+    border:var(--primary-color) solid 2px  ;
+
+
 }
 
 textarea {
     resize: none;
     width: 177px;
 }
-
 .formulaire{
     border-radius: 15px;
     color: var(--primary-color);
@@ -743,41 +751,42 @@ textarea {
     padding:1rem 1.5rem ;
     width:60% ;
     cursor: pointer;
+   
 }
 .formulaire:hover{
     background-color:var(--secondary-color) ;
     color:var(--primary-color);
+     
 }
-
  .imgportraitcontact{
     display: grid;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     width:15rem;
     position: relative;
+    
 }
-
 .form-info {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
+    
 }
-
 .form-group {
     margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
-
 .form-description {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
+   
 }
-
 .imgportraitcontact::after {
     content: "";
     position: absolute;
@@ -788,10 +797,11 @@ textarea {
     top: 80%;
     left: calc(100% - 13rem);
     z-index: -1;
+    
 }
-
 .form-info select {
     width: 70%;
+    border:var(--tertiary-color) solid 5px  ;
 }
 
 @media screen and (min-width: 720px) {
@@ -895,17 +905,18 @@ footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 2rem 2rem 0 0;
+    border:var(--tertiary-color) solid 4px  ;
 }
 
 footer ul li {
     list-style: none;
+     
 }
-
 .footercontainer {
     margin-inline:3rem;
     padding-block:1rem;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 
