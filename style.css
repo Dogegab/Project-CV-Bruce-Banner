@@ -1004,7 +1004,6 @@ footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 2rem 2rem 0 0;
-    border:var(--tertiary-color) solid 4px  ;
     margin-top: auto;
 }
 
